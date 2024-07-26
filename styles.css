@@ -1,0 +1,264 @@
+/* styles.css */
+
+/* Importando a fonte Roboto do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4; /* Cor de fundo para o corpo */
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo semi-transparente para contraste */
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500; /* Fonte mais espessa para destaque */
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+nav .camera-icon {
+    font-size: 1.8em;
+}
+
+main {
+    flex: 1; /* Permite que o main ocupe o espaço disponível e empurre o footer para baixo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: url('camera.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo semi-transparente para melhorar o contraste */
+}
+
+/* Estilos para a seção hero dentro do main */
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente para destacar o texto sobre a imagem */
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    font-weight: 700; /* Fonte mais espessa para destaque */
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6347; /* Cor do botão */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave para a cor e efeito de clique */
+}
+
+.cta-button:hover {
+    background-color: #ff4500; /* Cor do botão ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento suave ao passar o mouse */
+}
+
+
+.register-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.register-form h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form .form-group {
+    margin-bottom: 15px;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Inclui padding e border no width total */
+}
+
+.register-form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.register-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.register-form legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.register-form button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #ff4500;
+}
+
+.success-message {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 600px;
+}
+
+.success-message h2 {
+    color: #4caf50; /* Verde para sucesso */
+    font-size: 2.5em;
+}
+
+.success-message p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.success-message .cta-button {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.success-message .cta-button:hover {
+    background-color: #ff4500;
+}
+
+/* Estilos para a seção sobre nós */
+.about-us {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* Cor de fundo clara para contraste com o fundo do main */
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-content p:last-of-type {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8); /* Cor de fundo semi-transparente para contraste */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+
+
+
